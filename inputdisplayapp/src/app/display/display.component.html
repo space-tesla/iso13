@@ -1,0 +1,11 @@
+<!-- Q.2) Create a simple Angular component that takes input data and displays it. -->
+
+<div style="max-width:400px;margin:auto;font-family:Arial;">
+  <h3>Enter Any Text</h3>
+
+  <input type="text" [(ngModel)]="data" placeholder="Type something">
+
+  <button (click)="showData()">Show</button>
+
+  <h4 *ngIf="result">Output: {{ result }}</h4>
+</div>
